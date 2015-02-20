@@ -9,6 +9,7 @@
 import UIKit
 
 let controlState = UIControlState.Normal
+
 let hobbitNames = [
     "Gandalf", "Bilbo",
     "Thorin", "Fili", "Kili",
@@ -16,17 +17,35 @@ let hobbitNames = [
     "Bifur", "Bofur", "Bombur",
     "Dori", "Nori", "Ori",
     "Oin", "Gloin"
-];
-var hobbitDict = [String: Bool]();
-var hobbitName = ""
+]
+
+let mamaHobbitNames = [
+    "Thorin": "Wedgie",
+    "Balin": "Mrs. Norton",
+    "Dwalin": "Scary",
+    "Bifur": "Crazy",
+    "Bofur": "Pippi",
+    "Bombur": "The Bomb",
+    "Dori": "Braids",
+    "Nori": "Star",
+    "Ori": "Goober",
+    "Oin": "Horseshoes",
+    "Gloin": "Toad"
+]
 
 class ViewController: UIViewController {
+    var singleton = HobbitSingleton()
+
     @IBOutlet weak var hobbitButton: UIButton!
+
+    var hobbitDict = [String: Bool]();
+    var hobbitName = ""
+    var displayHobbitName = ""
 
     @IBAction func hobbitPress(but: UIButton) {
         if (but.titleForState(controlState) == "" && hobbitName != "") {
             but.setTitle(
-                hobbitName,
+                displayHobbitName,
                 forState: controlState
             )
         }
@@ -52,13 +71,19 @@ class ViewController: UIViewController {
         while (hobbitDict[newName] == true) {
             newName = getRandHobbitName()
         }
-        hobbitDict[newName] = true;
+        hobbitDict[newName] = true
         hobbitName = newName
+        displayHobbitName = hobbitName
+        if (self.singleton.hobbitMode == "mama") {
+            displayHobbitName = mamaHobbitNames[hobbitName] ?? hobbitName
+        }
     }
 
     func getRandHobbitName()->String {
         return hobbitNames[Int(arc4random_uniform(UInt32(hobbitNames.count)))]
     }
+
+    @IBAction func unwindToView(segue:UIStoryboardSegue) {}
 
     override func viewDidLoad() {
         super.viewDidLoad()

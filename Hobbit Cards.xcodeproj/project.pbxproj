@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2A65AA1A8F2EBC00B0F1AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A65A91A8F2EBC00B0F1AB /* SettingsViewController.swift */; };
+		4D2A65AC1A8F376100B0F1AB /* HobbitSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A65AB1A8F376100B0F1AB /* HobbitSingleton.swift */; };
 		4D7D71F71A37919A0095088A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D71F61A37919A0095088A /* AppDelegate.swift */; };
 		4D7D71F91A37919A0095088A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7D71F81A37919A0095088A /* ViewController.swift */; };
 		4D7D71FC1A37919A0095088A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D7D71FA1A37919A0095088A /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D2A65A91A8F2EBC00B0F1AB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4D2A65AB1A8F376100B0F1AB /* HobbitSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HobbitSingleton.swift; sourceTree = "<group>"; };
 		4D7D71F11A37919A0095088A /* Hobbit Cards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hobbit Cards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D7D71F51A37919A0095088A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D7D71F61A37919A0095088A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D2A65AD1A8F376900B0F1AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D7D71F81A37919A0095088A /* ViewController.swift */,
+				4D2A65A91A8F2EBC00B0F1AB /* SettingsViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4D2A65AE1A8F376E00B0F1AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4D2A65AB1A8F376100B0F1AB /* HobbitSingleton.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		4D7D71E81A37919A0095088A = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				4D7D71F61A37919A0095088A /* AppDelegate.swift */,
-				4D7D71F81A37919A0095088A /* ViewController.swift */,
 				4D7D71FA1A37919A0095088A /* Main.storyboard */,
+				4D2A65AD1A8F376900B0F1AB /* Views */,
+				4D2A65AE1A8F376E00B0F1AB /* Models */,
 				4D7D71FD1A37919A0095088A /* Images.xcassets */,
 				4D7D71FF1A37919A0095088A /* LaunchScreen.xib */,
 				4D7D71F41A37919A0095088A /* Supporting Files */,
@@ -212,8 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2A65AC1A8F376100B0F1AB /* HobbitSingleton.swift in Sources */,
 				4D7D71F91A37919A0095088A /* ViewController.swift in Sources */,
 				4D7D71F71A37919A0095088A /* AppDelegate.swift in Sources */,
+				4D2A65AA1A8F2EBC00B0F1AB /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

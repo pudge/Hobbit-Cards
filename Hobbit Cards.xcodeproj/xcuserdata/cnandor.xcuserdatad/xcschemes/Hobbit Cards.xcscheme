@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D7D71F01A37919A0095088A"
-               BuildableName = "Hobbit-Cards.app"
+               BuildableName = "Hobbit Cards.app"
                BlueprintName = "Hobbit Cards"
                ReferencedContainer = "container:Hobbit Cards.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D7D72051A37919A0095088A"
-               BuildableName = "Hobbit-CardsTests.xctest"
+               BuildableName = "Hobbit CardsTests.xctest"
                BlueprintName = "Hobbit CardsTests"
                ReferencedContainer = "container:Hobbit Cards.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4D7D72051A37919A0095088A"
-               BuildableName = "Hobbit-CardsTests.xctest"
+               BuildableName = "Hobbit CardsTests.xctest"
                BlueprintName = "Hobbit CardsTests"
                ReferencedContainer = "container:Hobbit Cards.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D7D71F01A37919A0095088A"
-            BuildableName = "Hobbit-Cards.app"
+            BuildableName = "Hobbit Cards.app"
             BlueprintName = "Hobbit Cards"
             ReferencedContainer = "container:Hobbit Cards.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D7D71F01A37919A0095088A"
-            BuildableName = "Hobbit-Cards.app"
+            BuildableName = "Hobbit Cards.app"
             BlueprintName = "Hobbit Cards"
             ReferencedContainer = "container:Hobbit Cards.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4D7D71F01A37919A0095088A"
-            BuildableName = "Hobbit-Cards.app"
+            BuildableName = "Hobbit Cards.app"
             BlueprintName = "Hobbit Cards"
             ReferencedContainer = "container:Hobbit Cards.xcodeproj">
          </BuildableReference>
